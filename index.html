@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uvindu -Data Scientist Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Uvindu</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+ 
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Hi, I'm</span>
+                    <span class="title-name">Uvindu</span>
+                    <span class="title-profession">Data Scientist</span>
+                </h1>
+                <p class="hero-description">
+                    I craft exceptional digital experiences with modern technologies.
+                    Passionate about clean code, innovative solutions, and bringing ideas to life.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="downloadCV()">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </button>
+                    <button class="btn-secondary" onclick="scrollToSection('projects')">
+                        View Projects
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="image-background"></div>
+                    <img src="WhatsApp Image 2025-09-07 at 15.52.53_07b6b575.jpg" alt="Profile" class="profile-image">
+                    <!-- <div class="image-overlay"></div> -->
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Creating digital experiences that matter</h3>
+                    <p>
+                        I am a second-year Data Science undergraduate at Sabaragamuwa University of Sri Lanka, passionate about harnessing the power of data and technology to solve real-world problems. My academic journey and curiosity have driven me to explore areas such as web development, big data analysis, prompt engineering, machine learning, deep learning, and data analytics.
+
+                        Beyond academics, I thrive in team-oriented environments, often taking the initiative to lead and motivate others toward shared goals. I enjoy balancing my technical interests with sports, which has further shaped my skills in teamwork, discipline, and resilience.
+
+                        With a strong enthusiasm for continuous learning and innovation, I aim to grow as a data-driven problem solver while contributing positively to both academic and professional communities.
+                    </p>
+
+                        <div class="stat">
+                            <h4>3</h4>
+                            <span>Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <h4>2</h4>
+                            <span>Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <h4>01</h4>
+                            <span>Happy Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Skills Section -->
+<section class="skills" id="skills">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">My expertise</span>
+      <h2 class="section-title">Skills & Technologies</h2>
+    </div>
+
+    <div class="skills-grid">
+      <!-- Web Development -->
+      <div class="skill-category">
+        <h3>Web Development</h3>
+        <div class="skills-list">
+          <div class="skill-item" data-skill="90">
+            <div class="skill-info">
+              <i class="fab fa-html5"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-skill="85">
+            <div class="skill-info">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-skill="88">
+            <div class="skill-info">
+              <i class="fab fa-js-square"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 88%"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-skill="80">
+            <div class="skill-info">
+              <i class="fab fa-react"></i>
+              <span>React</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Science & ML -->
+      <div class="skill-category">
+        <h3>Data Science & AI</h3>
+        <div class="skills-list">
+          <div class="skill-item" data-skill="85">
+            <div class="skill-info">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-skill="80">
+            <div class="skill-info">
+              <i class="fas fa-brain"></i>
+              <span>Machine Learning</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-skill="78">
+            <div class="skill-info">
+              <i class="fas fa-network-wired"></i>
+              <span>Deep Learning</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 78%"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-skill="82">
+            <div class="skill-info">
+              <i class="fas fa-database"></i>
+              <span>Data Analytics</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 82%"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-skill="75">
+            <div class="skill-info">
+              <i class="fas fa-keyboard"></i>
+              <span>Prompt Engineering</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools & Big Data -->
+      <div class="skill-category">
+        <h3>Big Data & Tools</h3>
+        <div class="skills-list">
+          <div class="skill-item" data-skill="80">
+            <div class="skill-info">
+              <i class="fas fa-database"></i>
+              <span>SQL</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-skill="78">
+            <div class="skill-info">
+              <i class="fab fa-python"></i>
+              <span>Pandas / NumPy</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 78%"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-skill="76">
+            <div class="skill-info">
+              <i class="fas fa-chart-line"></i>
+              <span>Big Data Analysis</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 76%"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-skill="90">
+            <div class="skill-info">
+              <i class="fab fa-git-alt"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="skill-item" data-skill="85">
+            <div class="skill-info">
+              <i class="fas fa-code"></i>
+              <span>VS Code</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>TLSH-Furniture</h3>
+                        <p>A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MySQL</span>
+                            <span>Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&h=300&fit=crop" alt="Task Management App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Socket.io</span>
+                            <span>Express</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop" alt="Analytics Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Crystal-Beauty</h3>
+                        <p>A comprehensive analytics dashboard with interactive charts, real-time data visualization, and customizable reporting features.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>D3.js</span>
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <span>uvinduvidura54@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <span>076 423 7533</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Srilanka</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+    <a href="https://www.linkedin.com/in/uvindu-vidura-1090ab368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+       class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+    
+    <a href="https://github.com/UviduVidura" 
+       class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+    
+    <a href="https://www.instagram.com/uvinduvidura?igsh=YmNpNHNiZTg4NTNx" 
+       class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Uvindu. All rights reserved. Made with <i class="fas fa-heart"></i> and lots of coffee.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
